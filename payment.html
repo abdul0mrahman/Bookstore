@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booke | Payment</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("Bookstore.jpeg");
+      background-size: cover;
+      background-position: center;
+      padding: 40px;
+    }
+
+    h1 { text-align: center; color: white; margin-bottom: 30px; }
+
+    .book {
+      display: none;
+      max-width: 480px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      color: black;
+    }
+
+    .book:target { display: block; }
+
+    .book .price { font-size: 14px; margin-bottom: 15px; color: #555; }
+
+    input[type="text"], input[type="tel"] {
+      width: 100%;
+      padding: 9px;
+      margin-bottom: 10px;
+      border: 1px solid black;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    p.label { font-size: 14px; margin-bottom: 8px; margin-top: 5px; }
+
+    .options label { display: block; font-size: 14px; margin-bottom: 8px; cursor: pointer; }
+    .options input[type="radio"] { margin-right: 8px; }
+
+    a.pay {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: black;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 15px;
+    }
+
+    a.back { display: block; text-align: center; margin-top: 20px; color: white; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<h1>Payment</h1>
+
+<!-- ATOMIC HABITS -->
+<div id="atomic" class="book">
+  <h2>Atomic Habits</h2>
+  <p class="price">₹499</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_atomic"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_atomic"> UPI</label>
+    <label><input type="radio" name="pay_atomic"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- IKIGAI -->
+<div id="ikigai" class="book">
+  <h2>Ikigai</h2>
+  <p class="price">₹380</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_ikigai"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_ikigai"> UPI</label>
+    <label><input type="radio" name="pay_ikigai"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- THINK LIKE A MONK -->
+<div id="monk" class="book">
+  <h2>Think Like a Monk</h2>
+  <p class="price">₹420</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_monk"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_monk"> UPI</label>
+    <label><input type="radio" name="pay_monk"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- THE POWER OF NOW -->
+<div id="powerofnow" class="book">
+  <h2>The Power of Now</h2>
+  <p class="price">₹450</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_powerofnow"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_powerofnow"> UPI</label>
+    <label><input type="radio" name="pay_powerofnow"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- THE ART OF LETTING GO -->
+<div id="lettinggo" class="book">
+  <h2>The Art of Letting Go</h2>
+  <p class="price">₹399</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_lettinggo"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_lettinggo"> UPI</label>
+    <label><input type="radio" name="pay_lettinggo"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- DEEP WORK -->
+<div id="deepwork" class="book">
+  <h2>Deep Work</h2>
+  <p class="price">₹460</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_deepwork"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_deepwork"> UPI</label>
+    <label><input type="radio" name="pay_deepwork"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- RICH DAD POOR DAD -->
+<div id="richdad" class="book">
+  <h2>Rich Dad Poor Dad</h2>
+  <p class="price">₹450</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_richdad"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_richdad"> UPI</label>
+    <label><input type="radio" name="pay_richdad"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- THE PSYCHOLOGY OF MONEY -->
+<div id="psychmoney" class="book">
+  <h2>The Psychology of Money</h2>
+  <p class="price">₹399</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_psychmoney"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_psychmoney"> UPI</label>
+    <label><input type="radio" name="pay_psychmoney"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- THE INTELLIGENT INVESTOR -->
+<div id="intelligent" class="book">
+  <h2>The Intelligent Investor</h2>
+  <p class="price">₹550</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_intelligent"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_intelligent"> UPI</label>
+    <label><input type="radio" name="pay_intelligent"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- THE ALCHEMIST -->
+<div id="alchemist" class="book">
+  <h2>The Alchemist</h2>
+  <p class="price">₹350</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_alchemist"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_alchemist"> UPI</label>
+    <label><input type="radio" name="pay_alchemist"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- HARRY POTTER -->
+<div id="harry" class="book">
+  <h2>Harry Potter</h2>
+  <p class="price">₹599</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_harry"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_harry"> UPI</label>
+    <label><input type="radio" name="pay_harry"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- GAME OF THRONES -->
+<div id="thrones" class="book">
+  <h2>Game of Thrones</h2>
+  <p class="price">₹650</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_thrones"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_thrones"> UPI</label>
+    <label><input type="radio" name="pay_thrones"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- THE FAULT IN OUR STARS -->
+<div id="fault" class="book">
+  <h2>The Fault in Our Stars</h2>
+  <p class="price">₹399</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_fault"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_fault"> UPI</label>
+    <label><input type="radio" name="pay_fault"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- 1984 -->
+<div id="nineteen84" class="book">
+  <h2>1984</h2>
+  <p class="price">₹300</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_nineteen84"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_nineteen84"> UPI</label>
+    <label><input type="radio" name="pay_nineteen84"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<!-- THE KITE RUNNER -->
+<div id="kiterunner" class="book">
+  <h2>The Kite Runner</h2>
+  <p class="price">₹420</p>
+  <input type="text" placeholder="Full Name">
+  <input type="tel" placeholder="Phone Number">
+  <input type="text" placeholder="Address">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="PIN Code">
+  <p class="label">Payment Method</p>
+  <div class="options">
+    <label><input type="radio" name="pay_kiterunner"> Cash on Delivery</label>
+    <label><input type="radio" name="pay_kiterunner"> UPI</label>
+    <label><input type="radio" name="pay_kiterunner"> Buy Now, Pay Later</label>
+  </div>
+  <a href="confirmation.html" class="pay">Place Order</a>
+</div>
+
+<a href="catalog.html" class="back">← Back to Catalog</a>
+
+</body>
+</html>

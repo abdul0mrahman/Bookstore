@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booke | Book Preview</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url("Bookstore.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px;
+}
+
+h1 { text-align: center; margin-bottom: 30px; }
+
+.preview {
+  display: none;
+  max-width: 1000px;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.preview:target { display: grid; }
+
+.card img { width: 100%; height: 320px; object-fit: contain; border-radius: 6px; margin-bottom: 15px; }
+
+.author img { width: 120px; height: 120px; border-radius: 50%; object-fit: contain; margin-bottom: 10px; }
+
+h2 { margin-bottom: 10px; }
+
+h3 { font-size: 14px; margin-bottom: 8px; }
+
+p { font-size: 14px; line-height: 1.7; margin-bottom: 10px; }
+
+a.cart-btn {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  background: white;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.back { display: block; text-align: center; margin-top: 30px; color: white; text-decoration: none; }
+</style>
+</head>
+
+<body>
+
+<h1>Book Preview</h1>
+
+<!-- ATOMIC HABITS -->
+<div id="atomic" class="preview">
+  <div class="card">
+    <img src="1.jpg" alt="Atomic Habits">
+    <h2>Atomic Habits</h2>
+    <h3>Genre: Self Help</h3>
+    <h3>Price: ₹499</h3>
+    <p>Atomic Habits breaks down the science of habit formation into simple, actionable steps. James Clear argues that real change doesn't come from massive overhauls but from tiny 1% improvements done consistently. The book introduces the "Four Laws of Behavior Change" — make it obvious, attractive, easy, and satisfying — and explains how your environment, identity, and daily systems shape who you become far more than motivation or willpower ever will.</p>
+    <a href="cart.html#atomic" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="1.jpg" alt="James Clear">
+    <h2>James Clear</h2>
+    <h3>Born: January 22, 1986 — Hamilton, Ohio, USA</h3>
+    <p>James Clear studied biomechanics at Denison University, where a serious baseball injury forced him to rebuild his life from scratch — an experience that sparked his deep interest in habits and human performance.</p>
+    <p>After graduating in 2008, he began writing about self-improvement and behavioral psychology on his personal website, growing it to over a million subscribers.</p>
+    <p>Atomic Habits (2018) became a global phenomenon, selling over 15 million copies worldwide and spending years on bestseller lists.</p>
+  </div>
+</div>
+
+<!-- IKIGAI -->
+<div id="ikigai" class="preview">
+  <div class="card">
+    <img src="2.png" alt="Ikigai">
+    <h2>Ikigai</h2>
+    <h3>Genre: Life Philosophy</h3>
+    <h3>Price: ₹380</h3>
+    <p>Ikigai — a Japanese concept meaning "reason for being" — explores how the people of Okinawa, one of the world's longest-living populations, find purpose and joy in everyday life. The book weaves together philosophy, psychology, and real interviews with centenarians to reveal simple principles: stay active, slow down, don't eat until you're full, surround yourself with good friends, and always keep a reason to get up in the morning.</p>
+    <a href="cart.html#ikigai" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="2.png" alt="Héctor García">
+    <h2>Héctor García & Francesc Miralles</h2>
+    <h3>Héctor García — Born: 1981, Valencia, Spain</h3>
+    <p>Héctor García is a Spanish-born writer and software engineer who moved to Japan in 2004. He studied computer engineering and later became deeply fascinated by Japanese culture.</p>
+    <h3>Francesc Miralles — Born: 1968, Barcelona, Spain</h3>
+    <p>Francesc Miralles is a Spanish author and journalist who has written extensively on psychology, spirituality, and self-help.</p>
+    <p>Together, they traveled to Ogimi village in Okinawa to interview its oldest residents, turning their findings into the international bestseller Ikigai (2016).</p>
+  </div>
+</div>
+
+<!-- THINK LIKE A MONK -->
+<div id="monk" class="preview">
+  <div class="card">
+    <img src="3.png" alt="Think Like a Monk">
+    <h2>Think Like a Monk</h2>
+    <h3>Genre: Mindfulness</h3>
+    <h3>Price: ₹420</h3>
+    <p>Think Like a Monk draws on Jay Shetty's three years living as a Vedic monk in India to offer a practical guide to calming the mind and finding purpose. It blends ancient wisdom with modern neuroscience to help readers cultivate the mental clarity and peace that monks embody — without needing to give up everyday life.</p>
+    <a href="cart.html#monk" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="3.png" alt="Jay Shetty">
+    <h2>Jay Shetty</h2>
+    <h3>Born: September 6, 1987 — London, UK</h3>
+    <p>Jay Shetty grew up in London and studied Business Management at Cass Business School. After graduating, he traveled to India and spent three years training as a Vedic monk.</p>
+    <p>He became one of the world's most followed digital creators, with viral videos viewed over 8 billion times. His podcast "On Purpose" regularly tops global charts.</p>
+    <p>Think Like a Monk was published in 2020 and debuted at #1 on the New York Times bestseller list.</p>
+  </div>
+</div>
+
+<!-- THE POWER OF NOW -->
+<div id="powerofnow" class="preview">
+  <div class="card">
+    <img src="4.png" alt="The Power of Now">
+    <h2>The Power of Now</h2>
+    <h3>Genre: Spiritual</h3>
+    <h3>Price: ₹450</h3>
+    <p>The Power of Now is a spiritual guide that teaches readers to break free from the endless chatter of the mind and live fully in the present moment. Tolle argues that most human suffering comes from identifying too strongly with our thoughts and emotions. He guides readers toward a state of pure awareness — where peace isn't something you seek, but something you uncover when you stop running from the now.</p>
+    <a href="cart.html#powerofnow" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="4.png" alt="Eckhart Tolle">
+    <h2>Eckhart Tolle</h2>
+    <h3>Born: February 16, 1948 — Lünen, Germany</h3>
+    <p>Born Ulrich Leonard Tölle, Eckhart Tolle studied literature, philosophy, and languages at the University of London and later did postgraduate research at Cambridge.</p>
+    <p>At 29, he underwent a profound inner transformation that ended years of severe depression and anxiety.</p>
+    <p>The Power of Now (1997) became one of the best-selling spiritual books of all time, with over 5 million copies sold in North America alone.</p>
+  </div>
+</div>
+
+<!-- THE ART OF LETTING GO -->
+<div id="lettinggo" class="preview">
+  <div class="card">
+    <img src="5.png" alt="The Art of Letting Go">
+    <h2>The Art of Letting Go</h2>
+    <h3>Genre: Motivation</h3>
+    <h3>Price: ₹399</h3>
+    <p>The Art of Letting Go explores how clinging to the past — grudges, regrets, toxic relationships, and fear — holds us back from living freely. It offers practical wisdom on releasing emotional baggage, forgiving others and yourself, and making peace with uncertainty.</p>
+    <a href="cart.html#lettinggo" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="5.png" alt="Damon Zahariades">
+    <h2>Damon Zahariades</h2>
+    <h3>Author & Productivity Coach</h3>
+    <p>Damon Zahariades is a self-help and personal development author known for writing practical, no-nonsense guides on productivity, habits, and mental wellness.</p>
+    <p>His books are known for their direct, actionable tone — cutting through motivational fluff and offering step-by-step systems readers can actually apply.</p>
+  </div>
+</div>
+
+<!-- DEEP WORK -->
+<div id="deepwork" class="preview">
+  <div class="card">
+    <img src="deepwork.webp" alt="Deep Work">
+    <h2>Deep Work</h2>
+    <h3>Genre: Productivity</h3>
+    <h3>Price: ₹460</h3>
+    <p>Deep Work makes the case that the ability to focus without distraction is becoming one of the rarest and most valuable skills in our economy. Newport distinguishes between "deep work" (cognitively demanding, distraction-free tasks) and "shallow work" (emails, meetings, admin). The book provides a rigorous framework for restructuring your day to maximize meaningful output.</p>
+    <a href="cart.html#deepwork" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="deepwork.webp" alt="Cal Newport">
+    <h2>Cal Newport</h2>
+    <h3>Born: 1982 — USA</h3>
+    <p>Cal Newport pursued an academic path in computer science, earning his PhD from MIT in 2009. He is currently a professor at Georgetown University.</p>
+    <p>He is famously not on social media — a stance he defends in his writing. His other notable book, Digital Minimalism, extends the ideas of Deep Work into everyday technology use.</p>
+    <p>Deep Work (2016) became a landmark book in the productivity space.</p>
+  </div>
+</div>
+
+<!-- RICH DAD POOR DAD -->
+<div id="richdad" class="preview">
+  <div class="card">
+    <img src="6.png" alt="Rich Dad Poor Dad">
+    <h2>Rich Dad Poor Dad</h2>
+    <h3>Genre: Finance</h3>
+    <h3>Price: ₹450</h3>
+    <p>Rich Dad Poor Dad contrasts the financial philosophies of two father figures in Robert Kiyosaki's life. The book challenges conventional wisdom about money, work, and education, arguing that schools teach us nothing about building wealth. It introduces readers to the concepts of assets vs. liabilities, passive income, and making money work for you.</p>
+    <a href="cart.html#richdad" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="6.png" alt="Robert Kiyosaki">
+    <h2>Robert Kiyosaki</h2>
+    <h3>Born: April 8, 1947 — Hilo, Hawaii, USA</h3>
+    <p>Robert Kiyosaki attended the United States Merchant Marine Academy and later served in the U.S. Marine Corps as a helicopter gunship pilot during the Vietnam War.</p>
+    <p>After the military, he pursued entrepreneurship and dedicated himself to financial education, founding the Rich Dad Company.</p>
+    <p>Rich Dad Poor Dad (1997) has sold over 40 million copies globally.</p>
+  </div>
+</div>
+
+<!-- THE PSYCHOLOGY OF MONEY -->
+<div id="psychmoney" class="preview">
+  <div class="card">
+    <img src="7.png" alt="The Psychology of Money">
+    <h2>The Psychology of Money</h2>
+    <h3>Genre: Finance</h3>
+    <h3>Price: ₹399</h3>
+    <p>The Psychology of Money explores how our emotions, biases, and life experiences shape the financial decisions we make. Through 19 short stories, Morgan Housel unpacks timeless lessons about greed, fear, patience, and the surprising role luck plays in wealth.</p>
+    <a href="cart.html#psychmoney" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="7.png" alt="Morgan Housel">
+    <h2>Morgan Housel</h2>
+    <h3>Born: 1984 — USA</h3>
+    <p>Morgan Housel studied economics and began his career as a financial journalist, writing for The Motley Fool and later The Wall Street Journal.</p>
+    <p>He is a partner at Collaborative Fund and one of the most widely read finance writers in the world.</p>
+    <p>The Psychology of Money (2020) sold over 4 million copies and has been translated into more than 50 languages.</p>
+  </div>
+</div>
+
+<!-- THE INTELLIGENT INVESTOR -->
+<div id="intelligent" class="preview">
+  <div class="card">
+    <img src="intelligent.png" alt="The Intelligent Investor">
+    <h2>The Intelligent Investor</h2>
+    <h3>Genre: Investing</h3>
+    <h3>Price: ₹550</h3>
+    <p>The Intelligent Investor is widely considered the definitive book on value investing. Graham introduces the concept of "Mr. Market" and argues that successful investing is about discipline, patience, and protecting against losses rather than chasing gains. Warren Buffett called it "by far the best book on investing ever written."</p>
+    <a href="cart.html#intelligent" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="intelligent.png" alt="Benjamin Graham">
+    <h2>Benjamin Graham</h2>
+    <h3>Born: May 9, 1894 — London, UK</h3>
+    <p>Benjamin Graham studied at Columbia University and turned down teaching positions to begin his career on Wall Street.</p>
+    <p>He taught at Columbia Business School, where a young Warren Buffett became his most famous student. He is widely regarded as the "father of value investing."</p>
+    <p>The Intelligent Investor was first published in 1949 and has been continuously in print ever since.</p>
+  </div>
+</div>
+
+<!-- THE ALCHEMIST -->
+<div id="alchemist" class="preview">
+  <div class="card">
+    <img src="alchmist.png" alt="The Alchemist">
+    <h2>The Alchemist</h2>
+    <h3>Genre: Novel</h3>
+    <h3>Price: ₹350</h3>
+    <p>The Alchemist follows Santiago, an Andalusian shepherd boy who dreams of finding a treasure buried near the Egyptian pyramids. His journey becomes an allegory for following one's "Personal Legend" — the unique destiny each person carries within. Along the way, he learns that the universe conspires to help those who truly pursue their dreams.</p>
+    <a href="cart.html#alchemist" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="alchmist.png" alt="Paulo Coelho">
+    <h2>Paulo Coelho</h2>
+    <h3>Born: August 24, 1947 — Rio de Janeiro, Brazil</h3>
+    <p>Paulo Coelho grew up in Rio de Janeiro and showed an early passion for writing. He worked as a songwriter before taking a spiritual pilgrimage along the Road of Santiago de Compostela in 1986.</p>
+    <p>The Alchemist (1988) went on to sell over 65 million copies worldwide, making it one of the best-selling books in history and translated into 80+ languages.</p>
+  </div>
+</div>
+
+<!-- HARRY POTTER -->
+<div id="harry" class="preview">
+  <div class="card">
+    <img src="HARRY.png" alt="Harry Potter">
+    <h2>Harry Potter</h2>
+    <h3>Genre: Fantasy</h3>
+    <h3>Price: ₹599</h3>
+    <p>Harry Potter follows an orphaned boy who discovers on his 11th birthday that he is a wizard and has been accepted to Hogwarts School of Witchcraft and Wizardry. What begins as a tale of wonder grows into a deep exploration of love, loss, courage, and the battle between good and evil across seven books.</p>
+    <a href="cart.html#harry" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="HARRY.png" alt="J.K. Rowling">
+    <h2>J.K. Rowling</h2>
+    <h3>Born: July 31, 1965 — Yate, Gloucestershire, England</h3>
+    <p>Joanne Rowling studied French and Classics at the University of Exeter. She conceived the idea for Harry Potter in 1990 while on a delayed train. She wrote the first book while struggling through divorce, unemployment, and raising her daughter alone on welfare.</p>
+    <p>The manuscript was rejected by 12 publishers before Bloomsbury accepted it in 1996. The series has sold over 600 million copies worldwide.</p>
+  </div>
+</div>
+
+<!-- GAME OF THRONES -->
+<div id="thrones" class="preview">
+  <div class="card">
+    <img src="thrones.png" alt="Game of Thrones">
+    <h2>Game of Thrones</h2>
+    <h3>Genre: Fantasy</h3>
+    <h3>Price: ₹650</h3>
+    <p>A Game of Thrones is the first book in the A Song of Ice and Fire series. Noble families vie for control of the Iron Throne while a supernatural threat grows in the frozen north. Martin's world is famous for its moral complexity — heroes die, villains have motivations, and power corrupts even the noblest.</p>
+    <a href="cart.html#thrones" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="thrones.png" alt="George R.R. Martin">
+    <h2>George R.R. Martin</h2>
+    <h3>Born: September 20, 1948 — Bayonne, New Jersey, USA</h3>
+    <p>George R.R. Martin studied journalism at Northwestern University's Medill School. He spent years writing for television before returning to novels.</p>
+    <p>He began writing A Game of Thrones in 1991. Published in 1996, the series became the basis for HBO's Game of Thrones (2011–2019), one of the most-watched TV series in history.</p>
+  </div>
+</div>
+
+<!-- THE FAULT IN OUR STARS -->
+<div id="fault" class="preview">
+  <div class="card">
+    <img src="star.png" alt="The Fault in Our Stars">
+    <h2>The Fault in Our Stars</h2>
+    <h3>Genre: Romance</h3>
+    <h3>Price: ₹399</h3>
+    <p>The Fault in Our Stars is a deeply moving love story between two teenagers — Hazel Grace Lancaster, who has thyroid cancer, and Augustus Waters, a bone cancer survivor — who meet at a cancer support group. It is a story about love, mortality, and what it means to leave a mark on the world.</p>
+    <a href="cart.html#fault" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="star.png" alt="John Green">
+    <h2>John Green</h2>
+    <h3>Born: August 24, 1977 — Indianapolis, Indiana, USA</h3>
+    <p>John Green grew up in Florida and attended Kenyon College, double-majoring in English and Religious Studies. Before becoming a writer, he worked as a student chaplain at a children's hospital.</p>
+    <p>The Fault in Our Stars (2012) debuted at #1 on the New York Times bestseller list and was adapted into a successful 2014 film.</p>
+  </div>
+</div>
+
+<!-- 1984 -->
+<div id="nineteen84" class="preview">
+  <div class="card">
+    <img src="1984.png" alt="1984">
+    <h2>1984</h2>
+    <h3>Genre: Dystopian</h3>
+    <h3>Price: ₹300</h3>
+    <p>1984 is set in a totalitarian superstate ruled by "The Party" and its figurehead Big Brother. Winston Smith secretly despises the regime and begins a forbidden love affair and a private act of rebellion. Orwell explores surveillance, propaganda, and the destruction of individual thought. The concepts he coined — doublethink, thoughtcrime, Newspeak — have become part of our political vocabulary.</p>
+    <a href="cart.html#nineteen84" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="1984.png" alt="George Orwell">
+    <h2>George Orwell</h2>
+    <h3>Born: June 25, 1903 — Motihari, British India</h3>
+    <p>Born Eric Arthur Blair, Orwell joined the Indian Imperial Police in Burma before returning to Europe where he lived in poverty in Paris and London.</p>
+    <p>He fought in the Spanish Civil War (1936–37) against fascism, was wounded, and was nearly killed.</p>
+    <p>1984 was published in June 1949. Orwell died just seven months later in January 1950.</p>
+  </div>
+</div>
+
+<!-- THE KITE RUNNER -->
+<div id="kiterunner" class="preview">
+  <div class="card">
+    <img src="runner.png" alt="The Kite Runner">
+    <h2>The Kite Runner</h2>
+    <h3>Genre: Drama</h3>
+    <h3>Price: ₹420</h3>
+    <p>The Kite Runner is a story of friendship, betrayal, and redemption set against the backdrop of Afghanistan's turbulent history — from the Soviet invasion, through civil war, to the rise of the Taliban. Amir and Hassan share a genuine bond until one defining act of cowardice tears them apart. Decades later, Amir is given one chance at redemption.</p>
+    <a href="cart.html#kiterunner" class="cart-btn">Proceed to Cart</a>
+  </div>
+  <div class="card author">
+    <img src="runner.png" alt="Khaled Hosseini">
+    <h2>Khaled Hosseini</h2>
+    <h3>Born: March 4, 1965 — Kabul, Afghanistan</h3>
+    <p>Khaled Hosseini was born in Kabul. In 1980, following the Soviet invasion, his family sought asylum in California.</p>
+    <p>Hosseini studied biology at Santa Clara University and earned his medical degree from UC San Diego. He practiced medicine while writing The Kite Runner on the side.</p>
+    <p>The Kite Runner (2003) sold over 38 million copies and has been translated into 70 languages. Hosseini later became a UNHCR Goodwill Ambassador.</p>
+  </div>
+</div>
+
+<a href="catalog.html" class="back">← Back to Catalog</a>
+
+</body>
+</html>

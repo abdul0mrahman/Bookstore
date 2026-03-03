@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booke | Registration</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Bookstore.jpeg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .form-container {
+      background: white;
+      padding: 35px 40px;
+      width: 420px;
+      border-radius: 8px;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: black;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    label {
+      width: 140px;
+      font-size: 14px;
+    }
+
+    input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid black;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: black;
+    }
+
+    a {
+      color: black;
+      font-weight: 500;
+      text-decoration: underline; /* underline Log in */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Create Account</h1>
+
+    <form action="profile.html">
+      <div class="row">
+        <label>Full Name</label>
+        <input type="text" required>
+      </div>
+
+      <div class="row">
+        <label>Email Address</label>
+        <input type="email" required>
+      </div>
+
+      <div class="row">
+        <label>Phone Number</label>
+        <input type="tel" required>
+      </div>
+
+      <div class="row">
+        <label>Username</label>
+        <input type="text" required>
+      </div>
+
+      <div class="row">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+
+      <div class="row">
+        <label>Confirm Password</label>
+        <input type="password" required>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account? <a href="login.html">Log in</a></p>
+  </div>
+</body>
+</html>

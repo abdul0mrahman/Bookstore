@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booke | Cart</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("Bookstore.jpeg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .cart {
+      width: 520px;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      color: black;
+    }
+
+    h1 { text-align: center; margin-bottom: 25px; color: black; }
+
+    label { color: black; font-size: 14px; }
+
+    .item { display: none; flex-direction: column; gap: 15px; }
+    .item.active { display: flex; }
+
+    .item-row { display: flex; gap: 15px; border-bottom: 1px solid #ddd; padding-bottom: 15px; }
+
+    .item img { width: 90px; height: 130px; object-fit: cover; border-radius: 4px; }
+
+    .details h3 { font-size: 16px; margin-bottom: 6px; }
+    .details p { font-size: 14px; margin-bottom: 6px; }
+    .details input { width: 60px; padding: 5px; margin-top: 5px; border: 1px solid black; border-radius: 4px; }
+
+    .actions { display: flex; flex-direction: column; gap: 10px; }
+
+    .actions a {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 4px;
+    }
+
+    .pay { background: black; color: white; }
+    .back { border: 1px solid black; color: black; }
+
+    .empty { text-align: center; padding: 20px 0; font-size: 14px; color: white; }
+  </style>
+</head>
+
+<body>
+  <div class="cart">
+    <h1>Your Cart</h1>
+
+    <div id="atomic" class="item">
+      <div class="item-row">
+        <img src="1.jpg" alt="Atomic Habits">
+        <div class="details">
+          <h3>Atomic Habits</h3>
+          <p>Price: ₹499</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#atomic" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="ikigai" class="item">
+      <div class="item-row">
+        <img src="2.png" alt="Ikigai">
+        <div class="details">
+          <h3>Ikigai</h3>
+          <p>Price: ₹380</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#ikigai" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="monk" class="item">
+      <div class="item-row">
+        <img src="3.png" alt="Think Like a Monk">
+        <div class="details">
+          <h3>Think Like a Monk</h3>
+          <p>Price: ₹420</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#monk" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="powerofnow" class="item">
+      <div class="item-row">
+        <img src="4.png" alt="The Power of Now">
+        <div class="details">
+          <h3>The Power of Now</h3>
+          <p>Price: ₹450</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#powerofnow" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="lettinggo" class="item">
+      <div class="item-row">
+        <img src="5.png" alt="The Art of Letting Go">
+        <div class="details">
+          <h3>The Art of Letting Go</h3>
+          <p>Price: ₹399</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#lettinggo" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="deepwork" class="item">
+      <div class="item-row">
+        <img src="deepwork.webp" alt="Deep Work">
+        <div class="details">
+          <h3>Deep Work</h3>
+          <p>Price: ₹460</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#deepwork" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="richdad" class="item">
+      <div class="item-row">
+        <img src="6.png" alt="Rich Dad Poor Dad">
+        <div class="details">
+          <h3>Rich Dad Poor Dad</h3>
+          <p>Price: ₹450</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#richdad" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="psychmoney" class="item">
+      <div class="item-row">
+        <img src="7.png" alt="The Psychology of Money">
+        <div class="details">
+          <h3>The Psychology of Money</h3>
+          <p>Price: ₹399</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#psychmoney" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="intelligent" class="item">
+      <div class="item-row">
+        <img src="intelligent.png" alt="The Intelligent Investor">
+        <div class="details">
+          <h3>The Intelligent Investor</h3>
+          <p>Price: ₹550</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#intelligent" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="alchemist" class="item">
+      <div class="item-row">
+        <img src="alchmist.png" alt="The Alchemist">
+        <div class="details">
+          <h3>The Alchemist</h3>
+          <p>Price: ₹350</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#alchemist" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="harry" class="item">
+      <div class="item-row">
+        <img src="HARRY.png" alt="Harry Potter">
+        <div class="details">
+          <h3>Harry Potter</h3>
+          <p>Price: ₹599</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#harry" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="thrones" class="item">
+      <div class="item-row">
+        <img src="thrones.png" alt="Game of Thrones">
+        <div class="details">
+          <h3>Game of Thrones</h3>
+          <p>Price: ₹650</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#thrones" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="fault" class="item">
+      <div class="item-row">
+        <img src="star.png" alt="The Fault in Our Stars">
+        <div class="details">
+          <h3>The Fault in Our Stars</h3>
+          <p>Price: ₹399</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#fault" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="nineteen84" class="item">
+      <div class="item-row">
+        <img src="1984.png" alt="1984">
+        <div class="details">
+          <h3>1984</h3>
+          <p>Price: ₹300</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#nineteen84" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <div id="kiterunner" class="item">
+      <div class="item-row">
+        <img src="runner.png" alt="The Kite Runner">
+        <div class="details">
+          <h3>The Kite Runner</h3>
+          <p>Price: ₹420</p>
+          <label>Quantity</label><br>
+          <input type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="actions">
+        <a href="payment.html#kiterunner" class="pay">Proceed to Payment</a>
+        <a href="catalog.html" class="back">← Back to Catalog</a>
+      </div>
+    </div>
+
+    <p class="empty" id="emptyMsg" style="display:none;">No book selected. Go back to the catalog.</p>
+
+  </div>
+
+  <script>
+    const hash = window.location.hash.replace('#', '');
+    const emptyMsg = document.getElementById('emptyMsg');
+    if (!hash) {
+      emptyMsg.style.display = 'block';
+    } else {
+      const target = document.getElementById(hash);
+      if (target) target.classList.add('active');
+      else emptyMsg.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booke | Catalog</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Bookstore.jpeg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 40px;
+    }
+
+    .top-left { position: fixed; top: 20px; left: 30px; }
+    .top-right { position: fixed; top: 20px; right: 30px; }
+    .top-left a, .top-right a { color: white; text-decoration: none; font-weight: 500; }
+
+    h1 { text-align: center; margin-bottom: 40px; }
+
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    a.book-link { text-decoration: none; color: inherit; }
+
+    .book { text-align: center; cursor: pointer; }
+
+    .book img {
+      width: 100%;
+      height: 240px;
+      object-fit: contain;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .book h3 { font-size: 15px; margin-bottom: 5px; }
+
+    .book p { font-size: 13px; opacity: 0.85; margin-bottom: 6px; }
+
+    .book span { font-size: 14px; font-weight: 500; }
+
+    .back { display: block; text-align: center; margin-top: 40px; color: white; text-decoration: none; }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-left"><a href="profile.html">Profile</a></div>
+  <div class="top-right"><a href="cart.html">Cart</a></div>
+
+  <h1>Books Catalog</h1>
+
+  <div class="catalog">
+
+    <a href="book-preview.html#atomic" class="book-link">
+      <div class="book">
+        <img src="1.jpg" alt="Atomic Habits">
+        <h3>Atomic Habits</h3>
+        <p>Self Help</p>
+        <span>₹499</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#ikigai" class="book-link">
+      <div class="book">
+        <img src="2.png" alt="Ikigai">
+        <h3>Ikigai</h3>
+        <p>Life Philosophy</p>
+        <span>₹380</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#monk" class="book-link">
+      <div class="book">
+        <img src="3.png" alt="Think Like a Monk">
+        <h3>Think Like a Monk</h3>
+        <p>Mindfulness</p>
+        <span>₹420</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#powerofnow" class="book-link">
+      <div class="book">
+        <img src="4.png" alt="The Power of Now">
+        <h3>The Power of Now</h3>
+        <p>Spiritual</p>
+        <span>₹450</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#lettinggo" class="book-link">
+      <div class="book">
+        <img src="5.png" alt="The Art Of Letting Go">
+        <h3>The Art Of Letting Go</h3>
+        <p>Motivation</p>
+        <span>₹399</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#deepwork" class="book-link">
+      <div class="book">
+        <img src="deepwork.webp" alt="Deep Work">
+        <h3>Deep Work</h3>
+        <p>Productivity</p>
+        <span>₹460</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#richdad" class="book-link">
+      <div class="book">
+        <img src="6.png" alt="Rich Dad Poor Dad">
+        <h3>Rich Dad Poor Dad</h3>
+        <p>Finance</p>
+        <span>₹450</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#psychmoney" class="book-link">
+      <div class="book">
+        <img src="7.png" alt="The Psychology of Money">
+        <h3>The Psychology of Money</h3>
+        <p>Finance</p>
+        <span>₹399</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#intelligent" class="book-link">
+      <div class="book">
+        <img src="intelligent.png" alt="The Intelligent Investor">
+        <h3>The Intelligent Investor</h3>
+        <p>Investing</p>
+        <span>₹550</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#alchemist" class="book-link">
+      <div class="book">
+        <img src="alchmist.png" alt="The Alchemist">
+        <h3>The Alchemist</h3>
+        <p>Novel</p>
+        <span>₹350</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#harry" class="book-link">
+      <div class="book">
+        <img src="HARRY.png" alt="Harry Potter">
+        <h3>Harry Potter</h3>
+        <p>Fantasy</p>
+        <span>₹599</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#thrones" class="book-link">
+      <div class="book">
+        <img src="thrones.png" alt="Game of Thrones">
+        <h3>Game of Thrones</h3>
+        <p>Fantasy</p>
+        <span>₹650</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#fault" class="book-link">
+      <div class="book">
+        <img src="star.png" alt="The Fault in Our Stars">
+        <h3>The Fault in Our Stars</h3>
+        <p>Romance</p>
+        <span>₹399</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#nineteen84" class="book-link">
+      <div class="book">
+        <img src="1984.png" alt="1984">
+        <h3>1984</h3>
+        <p>Dystopian</p>
+        <span>₹300</span>
+      </div>
+    </a>
+
+    <a href="book-preview.html#kiterunner" class="book-link">
+      <div class="book">
+        <img src="runner.png" alt="The Kite Runner">
+        <h3>The Kite Runner</h3>
+        <p>Drama</p>
+        <span>₹420</span>
+      </div>
+    </a>
+
+  </div>
+
+  <a href="profile.html" class="back">← Back to Profile</a>
+
+</body>
+</html>
