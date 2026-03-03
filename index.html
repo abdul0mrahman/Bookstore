@@ -17,21 +17,40 @@
       align-items: center;
       color: white;
       text-align: center;
+      position: relative;
     }
 
     h1 { font-size: 56px; margin-bottom: 15px; }
 
     p { font-size: 15px; margin-bottom: 10px; }
 
-    a { color: white; text-decoration: none; font-weight: 500; }
+    a {
+      color: white;
+      font-weight: 500;
+      text-decoration: underline; /* underline Log in */
+    }
+
     a:hover { opacity: 0.8; }
+
+    /* top-right catalog link */
+    .catalog {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      text-decoration: none;
+      font-size: 14px;
+    }
   </style>
 </head>
 
 <body>
+
+  <a href="catalog.html" class="catalog">Catalog</a>
+
   <div>
     <h1>Welcome to Booke</h1>
-    <p>Already have one? <a href="registration.html">Log in</a></p>
+    <p>Create a new account? <a href="registration.html">Sign-Up</a></p>
   </div>
+
 </body>
 </html>
